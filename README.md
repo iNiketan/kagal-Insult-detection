@@ -1,1 +1,3 @@
 # kagal-competetion
+
+## titanic analysis
