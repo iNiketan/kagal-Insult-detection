@@ -1,4 +1,4 @@
-from Preprocess import Preprocess as Ipreprocess
+from insult_analysis import Preprocess as Ipreprocess
 import pandas as pd
 import numpy as np
 
@@ -46,9 +46,10 @@ from sklearn.naive_bayes import GaussianNB
 naive_clf = GaussianNB()
 naive_clf.fit(xtrain, y)  # 70.11 accuracy
 
-ypred = naive_clf.predict(xtest)
+#ypred = naive_clf.predict(xtest)
 
-from sklearn.metrics import confusion_matrix
+# fixing rearrangement going on....
+"""from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(test_y, ypred)
 print(cm)
 
@@ -58,5 +59,5 @@ rfc = RandomForestClassifier(n_estimators=200, criterion='entropy', random_state
 rfc.fit(xtrain, y)
 
 ypred_rfc = rfc.predict(xtest)
-print(confusion_matrix(test_y, ypred_rfc))
+print(confusion_matrix(test_y, ypred_rfc))"""
 
