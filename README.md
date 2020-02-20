@@ -1,4 +1,4 @@
-# kagal-competetion
+# insult detection
 
 ## with naive bayes
 accuracy = 70.11
